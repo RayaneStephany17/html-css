@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #b4c3c7;
+        }
+        body{
+            background-color: ;
+        }
+        #principal{
+            text-align: left;
+        }
+       
+        header{
+            background-color:#7d969b ;
+            padding:15px 20px 10px 20px;
+            border-radius: 20px;
+        }
+        nav{
+            text-align: right;
+            background-color:#10454F ;
+            padding: 3px;
+            box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.562);
+            border-radius: 20px;
+
+        }
+        nav > a{
+           
+            text-decoration: none;
+            color: rgb(231, 128, 2);
+            font-weight: bold;
+            margin-right: 30px;
+          
+            ;
+        }
+        nav.pesquisa{
+            height: 20px;
+            width: 500px;
+            background-color: white  ;
+            color:white;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+         
+        }
+        nav:hover{
+            text-decoration:line-through;
+        }
+        main{
+            background-color: #dce5e7;
+            padding: 10px;
+            margin: 10px;
+            
+
+            
+        }
+        article{
+            background-color: rgb(201, 201, 201);
+            
+        }
+        article>aside{
+            text-align: right;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(148, 148, 148);
+        }
+        footer{
+            background-color: darkgray;
+            color: antiquewhite;
+            text-align: center;
+            padding:2px;
+            margin: 0px;
+            
+        }
+        footer>p{
+            margin: 0px;
+        }
+       
+        /*.icone.lupa {
+  width: 20px;
+  height: 20px;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+
+.icone.lupa:after {
+  position: absolute;
+  width: 70%;
+  height: 4px;
+  background-color: black;
+  display: block;
+  content: "";
+  top: 50%;
+  left: 50%;
+
+  transform: rotate(45deg);
+  transform-origin: -2px 10px;
+}*/
+
+
+
+
+</style>
+</head>
+<body>
+    
+    <header><!--Cabeçalho-->
+        <h1 id="principal" >Meu site </h1>
+       
+        <nav><!--Navegação (links) do cabeçalho-->
+            <!--<div class="icone lupa"></div>-->
+            <nav class="pesquisa">
+            
+        </nav>
+           <a href="#">Carrinho</a>
+           <a href="#">Contato</a>
+           <a href="#">Ofertas</a>
+           <a href="#">saiba mais</a>
+        </nav>
+    </header>
+    <main><!--conteúdo da página-->
+<section id="Roupas"><!--Divisões de sessões-->
+<h1>Roupas femininos</h1>
+<article>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, quaerat accusamus quibusdam minima voluptatibus sapiente vel ab quasi nulla eos. Tenetur nisi deserunt facilis obcaecati non aspernatur, ullam suscipit eveniet?</p>
+    <aside>Coleção Rayane</aside>
+</article>
+<h1>Roupas Masculinas</h1>
+    <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore minus deserunt expedita eligendi assumenda deleniti voluptas alias animi provident beatae quisquam, ea adipisci numquam et error atque quam, repellat aliquam.</p>
+        <aside>Coleção Rayane</aside>
+    </article>
+
+
+</section>
+<section id="Sapatos">
+
+    <h1>Sapatos femininos</h1>
+    <article>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, quaerat accusamus quibusdam minima voluptatibus sapiente vel ab quasi nulla eos. Tenetur nisi deserunt facilis obcaecati non aspernatur, ullam suscipit eveniet?</p>
+        <aside>Coleção Rayane</aside>
+    </article>
+    <h1>Sapatos Masculinas</h1>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore minus deserunt expedita eligendi assumenda deleniti voluptas alias animi provident beatae quisquam, ea adipisci numquam et error atque quam, repellat aliquam.</p>
+            <aside>Coleção Rayane</aside>
+        </article>
+    
+    </section>
+    </main>
+    <footer><!--rodapé-->
+<p>Criado por Rayane 2024</p>
+<p>Copyright Rayane &copy;</p>
+    </footer>
+</body>
+</html>

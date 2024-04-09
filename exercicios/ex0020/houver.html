@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de houver</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div>p{
+            display: none;
+        }
+        div:hover>p{
+            display: block;
+            color:antiquewhite;
+            background-color: rgb(42, 151, 165);
+        }
+        div:hover{
+            color:rgb(0, 255, 42)
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de houver</h1>
+    <p>Passe o mouse o texto abaixo</p>
+    <div>
+        passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+</body>
+</html>
+<!-- body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div>p{ (AQUI QUER DIZER QUE O CONTEUDO DE P ESTA ENTRO DA DIV)
+            display: none;(É AQUI ESPECIFICA QUE NÃO É PRA APARECER O CONTEUDO DE P QUE ESTA DENTRO DE DIV)
+        }
+        div:hover>p{(AQUI SE CRIA UMA PSEUDO CLASSE ONDE ESPECIFICA QUE OS P DENTRO DA DIV IRÃO SEGUIR AS DEFINICIOS)
+            display: block;(O QUE COLOCA PARA APARECER O CONTEUDO)
+            color:antiquewhite;
+            background-color: rgb(42, 151, 165);
+        }
+        div:hover{
+            color:rgb(0, 255, 42)(AQUI É PRÁ TROCA A COR DO TEXTO QUANDO MOUSE ESTIVER EM CIMA)
+        }-->

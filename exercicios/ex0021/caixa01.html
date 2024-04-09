@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+</head>
+<style>
+    body{
+        background-color: rgb(233, 214, 189);
+    }
+    h1{ /*IN BLOCK(CAIXAS CADA UM EM UMA LINHA)*/
+        background-color: aquamarine;
+        height: 200px;
+        width: 300px;
+/*
+DEFINE tamanho da caiza H1
+        background-color: aquamarine;(cor da caixa em volta do texto)
+        height: 300px;(altura da caixa)
+        width: 300px;(largura da caixa)*/
+
+        border-width: 10px;
+        border-style:ridge;
+        border-color: blueviolet;
+        /*OU */
+        border: 10px ridge blueviolet;
+/*DESENHO DA PARTE DE FORA DA CAIXA
+        border-width: 10px;(altura da borda)
+        border-style:ridge;(estilo da borda(solid,ridge, ctrl + espaço))
+        border-color: blueviolet(cor da borda)*/
+
+        padding-left: 10px;
+        padding-top: 15px;
+        padding-bottom: 13px;
+        padding-right: 15px;
+        /*OU*/
+        padding: 10px 15px 13px 15px;
+
+/*DISTANCIA DO CENTRO PRA BORDA
+        padding-left: 5px; (distancia do texto esquerda)
+        padding-top: 5px;(distancia do texto cima)
+        padding-bottom: 5px;(distancia do texto baixo)
+        padding-right: 5px;(distancia do texto direita)
+*/
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        /*OU*/
+        margin: 20px auto 40px auto;
+
+        /*margin:auto; ou deifine as margin ou usa auto*/
+/*DISTANCIA DA BORDA PRA FORA
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin:auto;(DEIXAR A CAIXA NO MEIO AUMENTANDO A BORDA)*/
+
+        outline-width: 5px;
+        outline-style: dashed;
+        outline-color: brown;
+        /*OU*/
+        outline: 5px dashed salmon;
+/*
+MARGEM QUE PODE ATE SAIR FORA DA MARGIN
+outline-width: 10px;
+        outline-style: dashed;
+        outline-color: brown;
+*/
+
+    }
+    a{/* IN LINE(CAIXAS NA LINHA ONDE TTIVER ESPAÇO)*/
+        border-width: 5px;
+        border-style:groove;
+        border-color: rgb(87, 139, 235);
+
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+
+        margin: 15px 15px 15px  15px ;
+
+        outline: 5px dashed yellow;
+    }
+</style>
+
+<body>
+    <h1>exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#"> links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

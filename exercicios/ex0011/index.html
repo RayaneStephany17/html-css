@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia em html</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir essas imagens em varios dispositivos diferentes ou simplismente aumente o tamanho do navegador.</p>
+</body>
+<picture>
+    <!--COLOCAR A MAIOR PRIMEIRO COM IMG SRC -->
+<source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+<!--Essa linha de código é adiconada para que quando a imagem não for para um tamanho de até 750px ele passe a reproduzir a outra imagem que é menor é se adapta a tela se a tela a imagem de 300 px caber-->
+<source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+
+<!--Essa linha de código é adiconada para que quando a imagem não for para um tamanho de até 1050px ele passe a reproduzir a outra imagem que é menor é se adapta a tela se a tela a imagem de 750 px caber-->
+<img src="imagens/foto-g.png" alt="imagens flexíveis"/>
+<!--Essa imagem é a primeira apartir dela e do tamnho dela vamos adicionar as outras imagens que se modificaram para o determinado dispositivo.-->
+</picture>
+
+<h1>Vamos colocar audio</h1>
+<audio src="midia/1975 - Josh Kirsch_Media Right Productions.mp3" controls autoplay>
+</audio>
+
+    <h1>outra forma</h1>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/1975 - Josh Kirsch_Media Right Productions.mp3" type="audio/mpeg">
+        <source src="midia/1975 - Josh Kirsch_Media Right Productions.mp3" type="audio/ogg">
+        <p>Seu navegador não consegue reproduzir o áudio</p>
+        <a href="midia/1975 - Josh Kirsch_Media Right Productions.mp3">Clique aqui para baixar o arquivo</a><p>
+    </audio> 
+</html>
