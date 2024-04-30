@@ -9,28 +9,54 @@
         border: 1px solid black;
         margin: auto;
         padding: 10px;
-        width: 400px;
+       max-width:700px;/*faz a tela se adaptar caso diminua ela*/
         border-radius: 10px;
-        background-color: antiquewhite;
+        background-color: antiquewhite; 
+      
     }
     body{
+    
         height: 100vh;
-        background-image: url('imagens/wallpaper002.jpg');
+      background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+      /*shorthand- background
+        color>image>position>repeat>[size]>attachment
+        */
+
+       /* background-image: url('imagens/wallpaper002.jpg');
         background-color: black;
-        background-position: center top;/*coloca a img no centro da tela */
-        background-repeat: no-repeat;/*não ira repetir as imagens. em nehuma direção.pode colocar repeat para repetir */
-        background-size: cover;
-        /*cover vai combri toda a tela mas pode ser que corte parte da imagem*/
-        /*100% a img vai pegar toda a tela mas se dimunir ela vai aparecer a parte preta*/
-/*e pode colocar auto que deixa o computador resolver como vai ficar a imagem*/
-        /*contain faz a img ficar 100% exibida isso é ela vai ficar inteirra ma se almentar a tela vai ficar com barras pretas */
+        background-position: center top;*/
+
+        /*--coloca a img no centro da tela --*/
+
+       /* background-repeat: no-repeat;*/
+        /*--não ira repetir as imagens. em nehuma direção.pode colocar repeat para repetir --*/
+
+     /*   background-size: cover;*/
+        /*---cover vai combri toda a tela mas pode ser que corte parte da imagem---*/
+        /*---100% a img vai pegar toda a tela mas se dimunir ela vai aparecer a parte preta--*/
+        /*--e pode colocar auto que deixa o computador resolver como vai ficar a image--m*/
+        /*--contain faz a img ficar 100% exibida isso é ela vai ficar inteirra ma se almentar a tela vai ficar com barras pretas ----*/
+
+       /*  background-attachment: fixed;*/
+        /*----Faz com que a imagem de fundo fique fixa e não se mova junto com o texto já o scroll faz o fundo role com o conteudo ----*/
+        
     }
     </style>
 </head>
 <body>
 <main>
     <h1>Texto exemplo</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eos optio ad, suscipit quae consequuntur placeat maxime minus enim iusto nobis illo, totam delectus dolore ex dolorem sed nisi eveniet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eligendi debitis maiores quas blanditiis consequuntur accusamus ipsam modi doloribus explicabo quasi, animi eaque voluptatibus mollitia velit voluptatem. Consectetur, similique tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. At quaerat fugiat facere iusto asperiores quas animi! Illum quaerat incidunt, minima nostrum, distinctio, delectus hic porro deleniti facilis eveniet fugit nemo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eos optio ad, suscipit quae consequuntur placeat maxime minus enim iusto nobis illo, totam delectus dolore ex dolorem sed nisi eveniet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eligendi debitis maiores quas blanditiis consequuntur accusamus ipsam modi doloribus explicabo quasi, animi eaque voluptatibus mollitia velit voluptatem. Consectetur, similique tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. At quaerat fugiat facere iusto asperiores quas animi! Illum quaerat incidunt, minima nostrum, distinctio, delectus hic porro deleniti facilis eveniet fugit nemo.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos molestias, eveniet ipsam nobis reprehenderit tempore aliquam rem incidunt est alias adipisci asperiores eius maiores quis beatae! Labore dolorum ducimus voluptatem?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae rem ut veniam repellendus, quos ad nesciunt fugiat odit amet non, molestias excepturi dolor fuga debitis! Voluptatibus odit maxime enim tenetur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque impedit dolor veritatis doloribus nam est sit eos aliquid maxime, illum facere, cum, quibusdam totam. Praesentium quaerat aspernatur magnam nihil. Quam?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat doloremque deserunt nihil voluptate beatae, quae cupiditate labore ipsum ab sed hic recusandae! Repudiandae labore ullam cum nulla maiores iste cupiditate!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eos optio ad, suscipit quae consequuntur placeat maxime minus enim iusto nobis illo, totam delectus dolore ex dolorem sed nisi eveniet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eligendi debitis maiores quas blanditiis consequuntur accusamus ipsam modi doloribus explicabo quasi, animi eaque voluptatibus mollitia velit voluptatem. Consectetur, similique tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. At quaerat fugiat facere iusto asperiores quas animi! Illum quaerat incidunt, minima nostrum, distinctio, delectus hic porro deleniti facilis eveniet fugit nemo.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos molestias, eveniet ipsam nobis reprehenderit tempore aliquam rem incidunt est alias adipisci asperiores eius maiores quis beatae! Labore dolorum ducimus voluptatem?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae rem ut veniam repellendus, quos ad nesciunt fugiat odit amet non, molestias excepturi dolor fuga debitis! Voluptatibus odit maxime enim tenetur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque impedit dolor veritatis doloribus nam est sit eos aliquid maxime, illum facere, cum, quibusdam totam. Praesentium quaerat aspernatur magnam nihil. Quam?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat doloremque deserunt nihil voluptate beatae, quae cupiditate labore ipsum ab sed hic recusandae! Repudiandae labore ullam cum nulla maiores iste cupiditate!
+    </p>
 </main>
 
 </body>
