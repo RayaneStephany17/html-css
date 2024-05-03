@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 02</title>
+    <style>
+
+table{
+    padding: 10px;
+    border: 1px solid black;
+ border-collapse: collapse;
+ width: 500px;
+ position: relative;
+
+}
+caption{
+    background-color: rgba(167, 167, 255, 0.932);
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 10px;
+}
+thead , tfoot{
+    background-color: #0000ff;
+    color: white;
+   
+}
+th, td{
+    border: 1px solid black;
+    padding: 20px;
+   
+}
+thead > tr > th{
+position: sticky;
+top: 0px;
+background-color:#0000ff ;
+/*essas definições são para o titilo da tabela ficar aparecer mesmo que suba a tela para ver as outras partes da tabela*/
+}
+
+
+tbody>tr:nth-child(even){
+    background-color: rgb(154, 253, 253);
+}
+    tbody>tr:nth-child(odd){
+    background-color: rgb(20, 235, 235);
+/*:nth-child(2n)  (2n) vai fazer pular uma a uma
+:nth-child(odd)  
+(odd) e (even) tabelas impares e pares(odd impar e even par)
+serve para colorir a celula da tala para ficar mais facil de ver os dados na tabela*/
+}
+    </style>
+</head>
+<body>
+    <h1>Uso de tabela grandes</h1>
+    <!--
+ANATOMIA PARA TABELAS GRANDES
+
+TABLE
+    THEAD[cabeça da tabela]
+        TR,TD[dado que vai ter no cé lula],TH[titulo da tabela]
+    TBODY[corpo da tabela]
+        TR,TD,TH
+    TFOOT[rodapé da tabela]
+        TR,TD,TH
+    -->
+    
+
+    <table>
+        <caption>Melhores timer de Casa Estado</caption>
+<thead>
+    <tr>
+    <th scope="col"> Estado </th><!--scope="col" significa que é o titulo de uma lista que esta na parte de baixo ou seja em uma coluna. ou seja MG vai esta em baixo de Estado-->
+    <th scope="col"> Time </th>
+    </tr>
+</thead>
+        <tbody>
+        <tr>
+        <td> São Paulo </td>
+        <td>São Paulo</td>
+        </tr>
+        <tr>
+        <td>Rio de Janeiro</td>
+        <td>Flamengo</td>
+        </tr>
+        <tr>
+        <td>Minas Gerais</td>
+        <td>CRUZEIRO</td>
+        </tr>
+        <tr>
+        <td>Bahia </td>
+        <td>Bahia</td>
+        </tr>
+        <tr>
+        <td> Paraná</td>
+        <td>Atletico paranaese</td>
+        </tr>
+        <tr>
+        <td>Goias </td>
+        <td>Goias</td>
+        </tr>
+        <tr>
+        <td>Ceará </td>
+        <td>Fortaleza</td>
+        </tr>
+        <tr>
+        <td> São Paulo </td>
+        <td>São Paulo</td>
+        </tr>
+        <tr>
+        <td>Rio de Janeiro</td>
+        <td>Flamengo</td>
+        </tr>
+        <tr>
+        <td>Minas Gerais</td>
+        <td>CRUZEIRO</td>
+        </tr>
+        <tr>
+        <td>Bahia </td>
+        <td>Bahia</td>
+        </tr>
+        <tr>
+        <td> Paraná</td>
+        <td>Atletico paranaese</td>
+        </tr>
+        <tr>
+        <td>Goias </td>
+        <td>Goias</td>
+        </tr>
+        <tr>
+        <td>Ceará </td>
+        <td>Fortaleza</td>
+        </tr>
+        </tbody>
+<tfoot>
+<tr>
+    <th scope="row">Melhor time</th><!--siginifica que é o titulo de uma lista que as informações vai esta na mesma linha. o cruzeiro vai aparecer na mesma linha que melhor time-->
+    <td>CRUZEIRO</td>
+</tr>
+</tfoot>
+    </table>
+</body>
+</html>
