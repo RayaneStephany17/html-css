@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="cadastrofake.php" method="post" autocomplete="on">
+        <p>
+            <label for="icor"> Cor:</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+        <!--Definir cor. Fica no link da pagina o codigo da cor-->
+<p>
+<label for="inivel">Nivel:</label>
+<input type="range" name="nivel" id="inivel" min="1" max="100" value="1">
+</p>
+<!--type="range" barra de rolagem para escolher valor-->
+<!--min="" escolhe o numero minimo a ser escolhido-->
+<!--max="" até onde a barra vai até qual numero vai -->
+<!--Value="" em qual numero vai começar-->
+<p>
+    <p><label for="ifoto">Foto:</label></p>
+    <input type="file" name="foto" id="ifoto">
+</p>
+
+<!--Só da pra usar com o method="post"-->
+<p>
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpar">
+</p>
+    </form>
+</body>
+</html>
