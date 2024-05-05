@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastrofake.php" method="get" autocomplete="on">
+<fieldset>
+<legend>Sexo</legend>
+<p>
+    <input type="radio" name="sexo" id="isexmas" value="M"><label for="isexmas">Masculino</label>
+    <input type="radio" name="sexo" id="isexfem" value="F"><label for="isexfem">Femino</label>
+</p>
+<!--seleciona um -->
+<!--name="tem que ser igual"  no radius para voce conseguir selecionar certinho os names deve ser iguais-->
+<!--colocar values para aparecer no link -->
+<!--sempre colocar label nas nós nomes das opçoes para se clicar no nome selecione a caixa certa. A e coloca o mesmo ID em FOR do label Não erra-->
+</fieldset>
+<fieldset>
+<legend>Esportes</legend>
+<input type="checkbox" name="esbas" id="iesbas" > <label for="iesbas">Basquete</label><br>
+<input type="checkbox" name="esfut" id="iesfut" > <label for="iesfut">Futebol</label><br>
+<input type="checkbox" name="esvol" id="iesvol" > <label for="iesvol">Volêi</label><br>
+<input type="checkbox" name="esnat" id="iesnat" > <label for="iesnat">Natação<br></label>
+<!--sempre colocar label nas nós nomes das opçoes para se clicar no nome selecione a caixa certa. A e coloca o mesmo ID em FOR do label Não erra-->
+</fieldset>
+<p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+</p>
+    </form>
+</body>
+</html>
