@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Teste Formulario</h1>
+    <form action="cadastrofake.php" method="get">
+<p>
+    <label for="nome" >Nome:</label>
+    <input type="text" name="nome" id="inome" required maxlength="30" minlength="5" placeholder="Digite" autocomplete="name" required>
+</p>
+
+<p>
+<label for="media">Média:</label>
+<input type="number" name="media" id="imedia" min="0" max="10" placeholder="Colocar nota 0 a 10" step="0.1" value="5" required >
+</p>
+<!--step="" coloca de quanto em quanto os numeros vão pular colocando 1 vai de um em 1. colocando 0.1 vai de 0.1 em um exemplo: 5.4 5.4 5.6-->
+<p>
+    <label for="imes">Mês</label>
+    <input type="month" name="mes" id="imes" value="2024-05">
+</p>
+<!--Type="month" aparece um calendario par escolher mes e ano-->
+<!--value coloca um valor padrao ate voce mudar-->
+<p>
+    <label for="dia">Dia</label>
+    <input type="date" name="dia" id="idia" value="2024-05-05">
+</p>
+<!--Type="date" aparece um calendario par escolher dia,mes e ano-->
+<!--value coloca um valor padrao ate voce mudar-->
+
+<p>
+<label for="ihora">Hora</label>
+<input type="time" name="hora" id="ihora" >
+<!--type="time" escolher hora e minuto-->
+</p>
+<input type="submit" value="Enviar">
+<input type="reset" value="limpar">
+ </form>
+    
+</body>
+</html>
