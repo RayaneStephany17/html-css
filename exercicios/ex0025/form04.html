@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <form action="cadastrofake.php" method="get">
+<fieldset>
+    <legend>Dados pessoais</legend>
+    <p>
+        
+        <label for="nome">Nome:</label>
+        <input type="text" name="name" id="iname">
+    </p>
+    <p>
+<label for="email">Email:</label>
+<input type="email" name="email" id="iemail" autocomplete="email" required>
+    </p>
+    <!--type="email" -->
+<p>
+    <label for="telefone">Telefone:</label>
+    <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxx-xxxx">
+</p>
+<!--type="tel" serve para numeros de telefe-->
+<!--pattern="^\(\d{2}\)\d{4,5}-\d{4}$" fez com que o numero tenha que obecer o padrão(xx)xxxx-xxxx estudar mais HTML5 tlefone pattern-->
+<!--ESTUDAR SOBRE RegEX sobre numeros de telefone-->
+</fieldset>
+<p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+</p>
+
+    </form>
+</body>
+</html>
