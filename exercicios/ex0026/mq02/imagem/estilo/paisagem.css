@@ -1,2 +1,7 @@
 @charset "UTF-8";
-/* Aqui fica as definições para tela deitada(retato) */
+body{
+    background-image: url("../cev-landscape.jpg");
+    background-size: contain;
+    background-position: left top;
+
+}
