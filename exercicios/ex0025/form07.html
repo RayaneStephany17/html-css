@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastrofake.php" method="get" >
+        <label for="iest">Estado:</label>
+        <select name="estado" id="iest">
+            <option  selected>Escolha</option>
+<!--Usar select e da um nome para esse select-->
+<!--<option selected> nome da caixa onde vai aparecer as opções-->
+<!---->
+<!---->
+            <optgroup label="Região Sudeste">
+             <option value="MG">Minas gerais</option>
+            <option value="SP" >São paulo</option>
+            <option value="RJ">Rio de janeiro</optgroup>
+            </optgroup>
+
+            <optgroup label="Região Nordeste">
+            <option value="Maranhão">Maranhão</option>
+            <option value="Pernambuco">Pernambuco</option>
+            <option value="Rio Grande do norte">Rio Grande do norte</option>
+            </optgroup>
+            </select>
+        <!--optgroup cria divisões nas opções ou seja agrupa as opções em grupos que tem sendido-->
+        <!--coloca <option> e determina as opções não tem necessiadade funcional de colocar value=""-->
+        
+       <P>
+           <label for="iprof">Profissão:</label>
+           <input type="text" name="prof" id="iprof" list="lstprof">
+           <datalist id="lstprof">
+            <option>ADM</option>
+            <option>ADM</option>
+            <option>DEV</option>
+            <option>ABD</option>
+           </datalist>
+       </P>
+<!--datalist serve para da opções definidas para as pessoas preencher ou seja elas podem escrever com o que quiser mas também pode selecionar as opçõs-->
+<!--Tambem tem necessidade funcional de usar valeu="" mas pode ser impostante para algo -->
+       <p>
+        <label for="imsg">Mensagem:</label><br>
+        <textarea name="msg" id="imsg" cols="30" rows="10"> </textarea>
+       </p>
+<!--cols="" define a quantidade de letras que podem escrever antes de uma quebra de linha-->
+<!--rows="" define quantas linhas pode ter -->
+       <input type="submit" value="Enviar">
+       <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
