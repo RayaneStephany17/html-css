@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+
+/*Todas as  outras mídias*/
+/*Typicals device breakpoint
+
+ESSES JÁ FIZ AS CONFIGURAÇÕES NO FIRST DEVICE 
+320px — 480px: dispositivos móveis
+
+
+
+481px — 768px: iPads, tablets
+1025px — 1200px: desktops, telas grandes
+1201px e acima —  telas muito grandes, TVs
+
+*/
+
+@media print{/*IMPRESSÃO*/
+body{
+    background-image: url(../imagen/back-print.jpg);/*desnecessario*/
+    font-family: 'Courier New', Courier, monospace;
+
+}
+main{
+border: 2px solid blue;
+
+}
+main::after{
+    content: 'Essa impressão  veio de um site teste';
+    font-size: small;
+   color: brown;    
+}
+}
+
+@media screen and ( min-width : 768px) and (max-width: 992px){ /*TELAS TABLET*/
+
+   body{
+    background-image: url(../imagen/back-tablet.jpg);
+   }
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#tv{display: none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+
+   
+}
+
+
+@media screen and ( min-width : 992px) and (max-width: 1200px){/*TELAS DESKTOP*/
+
+    body{
+        background-image: url(../imagen/back-pc.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#tv{display: none;}
+    img#print{display: none;}
+    img#pc{display: block;}
+}
+
+@media screen and ( min-width : 1201px) {/*TELAS GRANDES*/
+ 
+    body{
+        background-image: url(../imagen/back-tv.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#tv{display:block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+}
